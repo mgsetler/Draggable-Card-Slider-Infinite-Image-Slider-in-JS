@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Draggable Card Slider | Infinite Image Slider in JS</title>
+
+  <!-- FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Miltonian+Tattoo&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@100&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/d5d5494136.js" crossorigin="anonymous"></script>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper swiper">
+    <i id="left" class="fa-solid fa-arrow-left"></i>
+
+    <!-- SAVANNAH FIELDS -->
+    <ul class="carousel">
+      <li class="card" style="
+            background-image: url(images/bgrim.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 8px solid #c0c0c0;
+            border-radius: 15px;
+          ">
+        <div class="img">
+          <img src="images/1savannah.png" alt="a blonde woman" draggable="false" style="border: 4px solid #C0C0C0;" />
+        </div>
+        <h2 style="font-family: Orbitron, sans-serif; color: white;">
+          Savannah Fields
+        </h2>
+        <p style="font-family: Orbitron, sans-serif; color: white;">
+          Engineer
+        </p>
+        <div>
+          <button class="socials fa-brands fa-facebook-f"
+            style="border: 4px solid #c0c0c0; color: #fff; font-size: 1.56rem;"></button>
+          <button class="socials fa-brands fa-twitter"
+            style="border: 4px solid #c0c0c0; color: #fff; font-size: 1.56rem;"></button>
+          <button class="socials fa-brands fa-google-plus-g"
+            style="border: 4px solid #c0c0c0; color: #fff; font-size: 1.56rem;"></button>
+        </div>
+      </li>
+      <!-- END SAVANNAH FIELDS -->
+
+      <!-- LANDON HUNT -->
+      <li class="card land-left" style="
+            background-image: url(images/bgtext.png);
+            background-size: contain;
+            background-size: 360px 150px;
+            background-repeat: no-repeat;
+            border: 8px solid #228c22;
+          ">
+        <div class="img land-left">
+          <img src="images/2landon.png" alt="a man with brown hair and blue eyes" draggable="false"
+            style="border: 4px solid #228c22;" />
+        </div>
+        <h2 style="color: #228c22; margin-top: -20px; margin-left: 135px;">Landon Hunt</h2>
+        <p style="font-size: 0.9rem; margin-left: 15px;">
+          Hi, there, I'm Landon. I enjoy BBQ, snow-mobiling, and fostering
+          elderly cats. I'm here to make friends and penpals.
+        </p>
+        <div style="margin-top: 5px;">
+          <button class="socials fa-brands fa-facebook-f" style="
+                border: 4px solid #228c22;
+                color: #228c22;
+                font-size: 1.56rem;
+              "></button>
+          <button class="socials fa-brands fa-twitter" style="
+                border: 4px solid #228c22;
+                color: #228c22;
+                font-size: 1.56rem;
+              "></button>
+          <button id="socials" class="socials fa-brands fa-google-plus-g" style="
+                border: 4px solid #228c22;
+                color: #228c22;
+                font-size: 1.56rem;
+              "></button>
+        </div>
+      </li>
+      <!-- END LANDON HUNT -->
+
+      <!-- JUSTIN MCCOY-->
+      <li class="card">
+        <img src="images/bgpines.png" alt="a background of pine trees" draggable="false" class="bgpines"
+          style="margin-bottom: -25px;">
+        <div class="img" styles="margin-bottom: -25px; height: 100px; width: 100px;">
+          <img src="images/3justin.png" alt="a smiling man with brown hair and a beard, wearing eyeglasses"
+            draggable="false"
+            style="border: 4px solid rgb(104, 89, 89); margin-top: -80px; margin-bottom: -25px; height: 120px; width: 120px;" />
+        </div>
+        <div styles="padding: 5px;">
+          <h2 style="font-family: Orbitron, sans-serif; margin-top: -25px;">
+            Justin Mccoy
+          </h2>
+          <p>Designer</p>
+        </div>
+        <div class="margin-top: 1px;">
+          <button class="socials fa-brands fa-facebook-f" style="font-size: 1.56rem;"></button>
+          <button class="socials fa-brands fa-twitter" style="font-size: 1.56rem;"></button>
+          <button class="socials fa-brands fa-google-plus-g" style="font-size: 1.56rem;"></button>
+        </div>
+      </li>
+      <!-- END JUSTIN MCCOY-->
+
+      <!-- GAIL SCHMIDT -->
+      <li class="card" style="
+            background-image: url(images/sunset.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 8px solid #00FFFF;
+          ">
+        <div class="bubble-btn img">
+          <img src="images/4gail.png" alt="a brunette woman with tattoos" draggable="false"
+            style="border: 4px solid #00FFFF" />
+        </div>
+        <h1
+          style="font-family: 'Miltonian Tattoo', serif; color: #ff10f0; background-color: #00FFFF; border-radius: 20%;">
+          Gail Schmidt
+        </h1>
+        <p style="font-size: 1rem; color: #ff10f0; background-color: #00FFFF; border-radius: 15%;">
+          I am a tattoo artist at Serenity Ink, with 8+ years as a solo body
+          modification provider. I specialize in lettering.
+        </p>
+        <div>
+          <button class="bubble-btn fa-brands fa-facebook-f"
+            style="font-size: 1.56rem; color: #ff10f0; width: 50px; height: 50px; object-fit: cover; border-radius: 50%; border: 4px solid #ff10f0; background-color: #00ffff;"></button>
+          <button class="bubble-btn fa-brands fa-twitter"
+            style="font-size: 1.56rem; color: #ff10f0; width: 50px; height: 50px; object-fit: cover; border-radius: 50%; border: 4px solid #ff10f0; background-color: #00ffff;"></button>
+          <button class="bubble-btn fa-brands fa-google-plus-g"
+            style="font-size: 1.56rem; color: #ff10f0; width: 50px; height: 50px; object-fit: cover; border-radius: 50%; border: 4px solid #ff10f0; background-color: #00ffff;"></button>
+      </li>
+      <!-- END GAIL SCHMIDT -->
+
+      <!-- FLORENCE GARZA-->
+      <li class="card" style="background-color: #eebab2; border: 8px solid #edde74;">
+        <div class="float img">
+          <img src="images/5florence.png" alt="a brunette woman with tattoos" draggable="false"
+            style="border: 4px solid #03c03c; float: top;" />
+        </div>
+        <h2 style="font-family: Handlee, cursive; margin-top: 5px;">
+          Florence Garza
+        </h2>
+        <p style="font-family: Handlee, sans-serif; font-size: 1rem;">
+          I am six years old, I like ponies and baking cookies with my mommy.
+          My favorite teacher is Mrs. Nielsen, and my favorite subject is
+          Math.
+        </p>
+        <button style="
+              background-color: #03c03c;
+              border: none;
+              padding: 15px 6px;
+              text-decoration: none;
+              font-size: 16px;
+              color: white;
+              border-radius: 43%;
+            ">
+          Continue Reading
+        </button>
+      </li>
+      <!-- END FLORENCE GARZA-->
+    </ul>
+    <i id="derecha" class="fa-solid fa-arrow-right"></i>
+  </div>
+</body>
+
+</html>
